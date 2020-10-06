@@ -4,18 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://kit.fontawesome.com/e7ffe5bb97.js"></script>
     <title>Robôzinho</title>
 </head>
 <body>
-    <div class="border border-purple m-4" 
-       contenteditable
-       oninput="setText(event)"> Seu texto aqui</div>
-  <button 
-    onclick="speak()" 
-    class="p-4 bg-purple-200 rounded shadow">Falar</button>
-  <button 
-    onclick="stop()" 
-    class="p-4 bg-purple-700 text-white rounded shadow">Parar</button>
- <script src="./script.js"></script>
+  <div class="card">
+    <h1>Fale Robôzinho</h1>
+      <div class="campo-text" 
+        contenteditable 
+        oninput="setText(event)">Digite seu texto aqui...</div>
+          <div class="button">
+            <button onclick="speak()" 
+              class="button-fala">
+              <i class="fas fa-volume-up"></i>
+              Falar
+            </button>
+            <button 
+              onclick="stop()" 
+              class="button-para">
+              <i class="fas fa-volume-mute"></i>
+              Parar
+            </button>
+          </div>
+  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
