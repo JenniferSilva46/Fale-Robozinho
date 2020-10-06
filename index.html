@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Robôzinho</title>
+</head>
+<body>
+    <div class="border border-purple m-4" 
+       contenteditable
+       oninput="setText(event)"> Seu texto aqui</div>
+  <button 
+    onclick="speak()" 
+    class="p-4 bg-purple-200 rounded shadow">Falar</button>
+  <button 
+    onclick="stop()" 
+    class="p-4 bg-purple-700 text-white rounded shadow">Parar</button>
+ <script src="./script.js"></script>
+</body>
+</html>
