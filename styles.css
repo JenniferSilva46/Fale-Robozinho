@@ -30,9 +30,23 @@ body {
     border-radius: 5px;
     outline: none;
 }
+.campo-text {
+    display: flex;
+    flex-direction: column;
+    max-width: 60ch;
+    max-height: 40ch;
+}
+.campo-text {
+    overflow-y: scroll;
+    
+}
 .campo-text:hover{
     border: 1px solid #FF6347;
     color: black;
+    width: 100%;
+}
+.campo-text .paragrafo-text {
+    background-color: #eed8c04d;
 }
 .button {
     display: flex;
