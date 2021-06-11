@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
-    <script src="https://kit.fontawesome.com/e7ffe5bb97.js"></script>
-    <title>Robôzinho</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/e7ffe5bb97.js"></script>
+  <title>Robôzinho</title>
 </head>
+
 <body>
   <div class="card">
-    <h1>Fale Robôzinho</h1>
-      <div class="campo-text" 
-        contenteditable 
-        oninput="setText(event)"><p class="paragrafo-text">Digite seu texto aqui...</p></div>
+    <h1> Fale Robôzinho </h1>
 
-          <div class="button">
-            <button onclick="speak()" 
-              class="button-fala">
-              <i class="fas fa-volume-up"></i>
-              Falar
-            </button>
-            <button 
-              onclick="stop()" 
-              class="button-para">
-              <i class="fas fa-volume-mute"></i>
-              Parar
-            </button>
-          </div>
+    <div class="card-Input">
+      <h2> Ajuste a velocidade da fala </h2>
+      <input type="range" id="speed" class="range blue" min="0.5" max="2" step=".5" value="1">
+      <span id="rate">1</span>
+
+    </div>
+    <div id="text" class="campo-text" contenteditable=true oninput="setText(event)">
+      <p id="input-text" class="paragrafo-text">Digite seu texto aqui...</p>
+    </div>
+
+    <div class="button">
+      <button onclick="speak()" class="button-fala">
+        <i class="fas fa-volume-up"></i>
+        Falar
+      </button>
+      <button id="button-pause" class="button-para">
+        <i class="fas fa-pause"></i>
+        Pausa
+      </button>
+      <button onclick="stop()" class="button-para">
+        <i class="fas fa-volume-mute"></i>
+        Parar
+      </button>
+    </div>
+
   </div>
 
   <script src="./script.js"></script>
 </body>
+
 </html>
