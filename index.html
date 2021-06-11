@@ -18,7 +18,7 @@
 
     <div class="card-Input">
       <h2> Ajuste a velocidade da fala </h2>
-      <input type="range" id="speed" class="range blue" min="0.5" max="2" step=".5" value="1">
+      <input type="range" id="speed" class="range blue" min="0.5" max="2" step=".5" value="1" oninput="counterRange()">
       <span id="rate">1</span>
 
     </div>
@@ -31,7 +31,7 @@
         <i class="fas fa-volume-up"></i>
         Falar
       </button>
-      <button id="button-pause" class="button-para">
+      <button onclick="pauseText()" id="button-pause" class="button-para">
         <i class="fas fa-pause"></i>
         Pausa
       </button>

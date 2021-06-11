@@ -5,15 +5,10 @@ const buttonPause = document.querySelector('#button-pause');
 
 const utterance = new SpeechSynthesisUtterance();
 
-speedInput.addEventListener('click', () => {
+const counterRange = () => {
   const rateInput = speedInput.value;
   ratePosition.innerHTML = rateInput;
-  console.log(rateInput);
-
-})
-
-buttonPause.addEventListener('click', pauseText)
-
+}
 
 // Falar em portugues.
 utterance.lang = "pt-BR";
