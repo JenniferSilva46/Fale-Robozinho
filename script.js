@@ -10,6 +10,9 @@ const counterRange = () => {
   ratePosition.innerHTML = rateInput;
 }
 
+buttonPause.addEventListener('touchEvent', pauseText)
+
+
 // Falar em portugues.
 utterance.lang = "pt-BR";
 
