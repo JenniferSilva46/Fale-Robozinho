@@ -10,9 +10,6 @@ const counterRange = () => {
   ratePosition.innerHTML = rateInput;
 }
 
-buttonPause.addEventListener('touchEvent', pauseText)
-
-
 // Falar em portugues.
 utterance.lang = "pt-BR";
 
@@ -31,10 +28,14 @@ const stop = () => {
   console.log("aqui...");
 }
 
-// pausa a fala do texto
-function pauseText() {
-  if (speechSynthesis.speaking) speechSynthesis.pause();
-}
+// Desativando button de pausa
+
+// buttonPause.addEventListener('touchEvent', pauseText)
+
+// // pausa a fala do texto
+// function pauseText() {
+//   if (speechSynthesis.speaking) speechSynthesis.pause();
+// }
 
 const setText = (event) => {
   utterance.text = event.target.innerText;
