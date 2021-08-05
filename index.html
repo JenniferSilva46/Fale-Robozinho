@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="shortcut icon" href="./public/img/icons8-som-30.png" type="image/x-icon">
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,100;1,200&display=swap"
     rel="stylesheet">
@@ -16,30 +18,29 @@
   <div class="card">
     <h1> Fale Robôzinho </h1>
 
-    <div class="card-Input">
+    <header class="card-Input">
       <h2> Ajuste a velocidade da fala </h2>
       <input type="range" id="speed" class="range blue" min="0.5" max="2" step=".5" value="1" oninput="counterRange()">
       <span id="rate">1</span>
-
-    </div>
-    <div id="text" class="campo-text" contenteditable=true oninput="setText(event)">
+    </header>
+    <section id="text" class="campo-text" contenteditable=true oninput="setText(event)">
       <p id="input-text" class="paragrafo-text">Digite seu texto aqui...</p>
-    </div>
+    </section>
 
-    <div class="button">
+    <main class="button">
       <button onclick="speak()" class="button-fala">
         <i class="fas fa-volume-up"></i>
         Falar
       </button>
-      <!-- <button onclick="pauseText()" id="button-pause" class="button-para">
+      <button onclick="pauseText()" id="button-pause" class="buttons-options">
         <i class="fas fa-pause"></i>
         Pausa
-      </button> -->
-      <button onclick="stop()" class="button-para">
+      </button>
+      <button onclick="stop()" class="buttons-options">
         <i class="fas fa-volume-mute"></i>
         Parar
       </button>
-    </div>
+    </main>
 
   </div>
 

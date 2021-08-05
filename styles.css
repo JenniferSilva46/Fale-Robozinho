@@ -181,11 +181,7 @@ input[type=range]::-moz-range-thumb {
     font-size: 12px;
 }
 
-button {
-    cursor: pointer;
-}
-
-.button {
+main {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -193,7 +189,7 @@ button {
     width: 100%;
 }
 
-.button button {
+main button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -202,9 +198,12 @@ button {
     border: 1px solid #FF6347;
     border-radius: 5px;
     font-size: 15px;
+
+    cursor: pointer;
+
 }
 
-.button i {
+button i {
     width: 23px;
 }
 
@@ -213,8 +212,7 @@ button {
     color: #000000;
 }
 
-.button-para {
+.buttons-options {
     background-color: #ff634744;
     color: #0f0d0dbd;
-    width: 23px;
 }
