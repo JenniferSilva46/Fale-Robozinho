@@ -30,12 +30,12 @@ const stop = () => {
 
 // Desativando button de pausa
 
-// buttonPause.addEventListener('touchEvent', pauseText)
+buttonPause.addEventListener('touchEvent', pauseText)
 
-// // pausa a fala do texto
-// function pauseText() {
-//   if (speechSynthesis.speaking) speechSynthesis.pause();
-// }
+// pausa a fala do texto
+function pauseText() {
+  if (speechSynthesis.speaking) speechSynthesis.pause();
+}
 
 const setText = (event) => {
   utterance.text = event.target.innerText;
