@@ -10,14 +10,19 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.container {
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
 .card {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    margin: auto;
-    margin-top: 12px;
+    width: 100%;
+    height: 50%;
 }
 
 .card h1 {
@@ -28,8 +33,6 @@ body {
 
 .card-Input {
     width: 100%;
-    padding-top: 12px;
-    padding-bottom: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,6 +153,7 @@ input[type=range]::-moz-range-thumb {
     display: flex;
     justify-content: center;
     width: 100%;
+    height: auto;
     margin-bottom: 12px;
     color: grey;
     border: 1px solid #ff634723;
@@ -169,16 +173,19 @@ input[type=range]::-moz-range-thumb {
 
 }
 
-.campo-text:hover {
-    border: 1px solid #FF6347;
+.campo-text:focus, .campo-text:hover {
+    border: 2px solid #FF6347;
     color: black;
     width: 100%;
 }
 
 .campo-text .paragrafo-text {
-    background-color: #eed8c04d;
+    background-color: #fcfaf84d;
     padding-left: 12px;
     font-size: 12px;
+    display: flex;
+    height: 100%;
+    align-items: center;
 }
 
 main {

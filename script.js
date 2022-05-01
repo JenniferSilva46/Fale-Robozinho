@@ -20,6 +20,7 @@ const speak = (event) => {
   }
   utterance.rate = speedInput.value || 1;
   speechSynthesis.speak(utterance);
+  campoTest();
 }
 
 // Parar de falar
@@ -38,6 +39,13 @@ function pauseText() {
 }
 
 const setText = (event) => {
+  console.log(event.target.innerText);
   utterance.text = event.target.innerText;
 
 }
+
+const campoTest = () => {
+
+  textInput.innerText = utterance.text;
+}
+
